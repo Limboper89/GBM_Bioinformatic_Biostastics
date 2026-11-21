@@ -113,7 +113,7 @@ print(f"  Chemotherapy Only: N = {len(df_chemo_only)}")
 print(f"  Treatment Naive / Resection Only: N = {len(df_naive)}")
 
 # ==============================================================================
-# FIGURE 1: TORRES-ROCA RSI MODEL WEIGHTS / ARCHITECTURE
+# TORRES-ROCA RSI MODEL WEIGHTS / ARCHITECTURE
 # ==============================================================================
 print("\nGenerating Figure 1: RSI Model Weights (Lollipop Chart)...")
 fig, ax = plt.subplots(figsize=(9, 5.5))
@@ -157,7 +157,7 @@ plt.savefig(p1_pdf)
 plt.close()
 
 # ==============================================================================
-# FIGURE 2: RSI GENE EXPRESSION DISTRIBUTION IN RADIATION ONLY COHORT (N=17)
+ RSI GENE EXPRESSION DISTRIBUTION IN RADIATION ONLY COHORT (N=17)
 # ==============================================================================
 print("Generating Figure 2: RSI Gene Expression in Radiation Only Cohort...")
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5.5))
@@ -212,7 +212,7 @@ plt.savefig(p2_pdf)
 plt.close()
 
 # ==============================================================================
-# FIGURE 3: RSI GENE EXPRESSION IN ALL RADIATION-TREATED PATIENTS (N=201)
+RSI GENE EXPRESSION IN ALL RADIATION-TREATED PATIENTS (N=201)
 # ==============================================================================
 print("Generating Figure 3: RSI Gene Expression in All Radiation Cohort...")
 fig, ax = plt.subplots(figsize=(10, 5))
@@ -238,7 +238,7 @@ plt.savefig(p3_pdf)
 plt.close()
 
 # ==============================================================================
-# FIGURE 4: SPEARMAN CORRELATION MATRIX HEATMAP
+#SPEARMAN CORRELATION MATRIX HEATMAP
 # ==============================================================================
 print("Generating Figure 4: Inter-gene Correlation Matrix...")
 corr_features = rsi_genes + ['RSI']
@@ -262,7 +262,7 @@ plt.savefig(p4_pdf)
 plt.close()
 
 # ==============================================================================
-# FIGURE 5: RSI SCORE DISTRIBUTION & CUTPOINTS
+# RSI SCORE DISTRIBUTION & CUTPOINTS
 # ==============================================================================
 print("Generating Figure 5: RSI Score Distributions...")
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
@@ -297,7 +297,7 @@ plt.savefig(p5_pdf)
 plt.close()
 
 # ==============================================================================
-# HELPER: PUBLICATION KAPLAN-MEIER PLOTTER WITH AT-RISK TABLE
+# KAPLAN-MEIER PLOTTER WITH AT-RISK TABLE
 # ==============================================================================
 def plot_publication_km(time_high, event_high, time_low, event_low, 
                          label_high, label_low, color_high, color_low,
